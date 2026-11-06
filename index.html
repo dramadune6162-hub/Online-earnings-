@@ -2,46 +2,51 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>From Hard Work to Smart Earning</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07101f">
+<title>Online Earnings — Instagram Reel</title>
 <style>
-:root{--ink:#10172a;--blue:#1769ff;--cyan:#43d9ff;--gold:#ffd34e;--paper:#f4f7ff}
-*{box-sizing:border-box}body{margin:0;background:#080f20;color:white;font-family:Inter,system-ui,Arial,sans-serif;overflow:hidden}
-.stage{min-height:100svh;display:grid;place-items:center;padding:22px;background:radial-gradient(circle at 75% 20%,#183d79 0,transparent 35%),linear-gradient(135deg,#081226,#111b35 65%,#07101f)}
-.frame{position:relative;width:min(1100px,96vw);aspect-ratio:16/9;overflow:hidden;border:1px solid #ffffff26;border-radius:24px;background:linear-gradient(120deg,#111c35,#182b50);box-shadow:0 28px 90px #0009}
-.topline{position:absolute;left:5%;right:5%;top:7%;display:flex;justify-content:space-between;align-items:center;color:#b8c9e8;font-size:clamp(10px,1.4vw,15px);letter-spacing:.16em;text-transform:uppercase}
-.progress{height:4px;background:#ffffff20;position:absolute;left:0;right:0;bottom:0}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--gold));animation:progress 30s linear forwards}
-.scene{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:10% 8%;opacity:0;animation:scene 30s linear infinite}
-.scene h1{font-size:clamp(28px,6vw,72px);line-height:1.02;margin:0 0 2%;font-weight:900;letter-spacing:-.045em;text-wrap:balance}
-.scene p{font-size:clamp(13px,2vw,23px);color:#c5d5f1;margin:0 auto;max-width:720px;line-height:1.5}
-.kicker{font-size:clamp(10px,1.4vw,16px);color:var(--cyan);letter-spacing:.22em;text-transform:uppercase;font-weight:800;margin-bottom:18px}
-.visual{font-size:clamp(58px,12vw,132px);margin:1.5% 0;filter:drop-shadow(0 12px 22px #0008);animation:float 3s ease-in-out infinite}
-.gold{color:var(--gold)}.cyan{color:var(--cyan)}.blue{color:#79aaff}
+:root{--ink:#07101f;--blue:#3478ff;--cyan:#53e3ff;--gold:#ffd45a;--white:#f7f9ff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;background:#050a14;color:var(--white);font-family:Inter,system-ui,Arial,sans-serif;display:grid;place-items:center;overflow:hidden}
+.stage{width:100%;min-height:100svh;display:grid;place-items:center;padding:12px;background:radial-gradient(circle at 50% 12%,#183d79 0,transparent 42%),linear-gradient(145deg,#050a14,#101b35 65%,#060d1b)}
+.reel{position:relative;width:min( min(92vw,430px), calc((100svh - 24px)*.5625));height:auto;aspect-ratio:9/16;overflow:hidden;border:1px solid #ffffff28;border-radius:26px;background:linear-gradient(150deg,#101c36,#0b1428 65%,#142c50);box-shadow:0 24px 80px #000b}
+.topline{position:absolute;z-index:4;left:7%;right:7%;top:5%;display:flex;justify-content:space-between;align-items:center;color:#c6d5f0;font-size:10px;letter-spacing:.16em;font-weight:800}
+.brand{color:var(--cyan)}
+.progress{height:3px;background:#ffffff20;position:absolute;z-index:5;left:0;right:0;bottom:0}
+.bar{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--gold));animation:progress 30s linear forwards}
+.scene{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:18% 8% 16%;opacity:0;animation:scene 30s linear infinite}
+.scene h1{font-size:clamp(32px,8vw,52px);line-height:1.03;margin:0 0 4%;font-weight:950;letter-spacing:-.05em;text-wrap:balance}
+.scene p{font-size:clamp(14px,3.8vw,18px);color:#c5d5f1;margin:0 auto;max-width:330px;line-height:1.5}
+.kicker{font-size:11px;color:var(--cyan);letter-spacing:.2em;text-transform:uppercase;font-weight:900;margin-bottom:22px}
+.visual{font-size:clamp(70px,19vw,112px);margin:5% 0 7%;filter:drop-shadow(0 12px 22px #0008);animation:float 3s ease-in-out infinite}
+.gold{color:var(--gold)}.cyan{color:var(--cyan)}.blue{color:#8bb4ff}
 .scene:nth-of-type(1){animation-delay:0s}.scene:nth-of-type(2){animation-delay:5s}.scene:nth-of-type(3){animation-delay:10s}.scene:nth-of-type(4){animation-delay:15s}.scene:nth-of-type(5){animation-delay:20s}.scene:nth-of-type(6){animation-delay:25s}
-.scene:nth-of-type(1){background:radial-gradient(ellipse at 50% 65%,#71432366,transparent 48%)}
-.scene:nth-of-type(2){background:radial-gradient(ellipse at 50% 65%,#4a283e88,transparent 50%)}
-.scene:nth-of-type(3){background:radial-gradient(ellipse at 50% 60%,#1769ff55,transparent 50%)}
-.scene:nth-of-type(4){background:radial-gradient(ellipse at 50% 60%,#00b9c955,transparent 50%)}
-.scene:nth-of-type(5){background:radial-gradient(ellipse at 50% 60%,#1d9a6655,transparent 50%)}
-.scene:nth-of-type(6){background:radial-gradient(ellipse at 50% 60%,#e6a92855,transparent 50%)}
-.chip{display:inline-block;border:1px solid #ffffff35;background:#ffffff12;border-radius:999px;padding:9px 16px;margin:8px;font-size:clamp(10px,1.3vw,15px);color:#eaf2ff}
-.scene .visual{animation:float 3s ease-in-out infinite,zoom 5s ease-in-out infinite}
+.scene:nth-of-type(1){background:radial-gradient(ellipse at 50% 58%,#71432366,transparent 48%)}
+.scene:nth-of-type(2){background:radial-gradient(ellipse at 50% 58%,#4a283e88,transparent 50%)}
+.scene:nth-of-type(3){background:radial-gradient(ellipse at 50% 58%,#1769ff55,transparent 50%)}
+.scene:nth-of-type(4){background:radial-gradient(ellipse at 50% 58%,#00b9c955,transparent 50%)}
+.scene:nth-of-type(5){background:radial-gradient(ellipse at 50% 58%,#1d9a6655,transparent 50%)}
+.scene:nth-of-type(6){background:radial-gradient(ellipse at 50% 58%,#e6a92855,transparent 50%)}
+.chip{display:inline-block;border:1px solid #ffffff35;background:#ffffff12;border-radius:999px;padding:9px 13px;margin:5px;font-size:12px;color:#eaf2ff}
+.cta{margin-top:24px!important;color:var(--gold)!important;font-weight:900;letter-spacing:.04em}
 @keyframes scene{0%,1%{opacity:0;transform:translateY(24px)}3%,14%{opacity:1;transform:translateY(0)}17%,100%{opacity:0;transform:translateY(-20px)}}
-@keyframes progress{to{width:100%}}@keyframes float{50%{transform:translateY(-12px)}}@keyframes zoom{50%{scale:1.08}}
-.controls{position:absolute;right:18px;bottom:18px;z-index:5;display:flex;gap:8px}.controls button{background:#ffffff18;color:white;border:1px solid #ffffff44;border-radius:999px;padding:9px 13px;cursor:pointer}
+@keyframes progress{to{width:100%}}@keyframes float{50%{transform:translateY(-12px)}}
+.controls{position:absolute;z-index:8;right:12px;bottom:14px;display:flex;gap:7px}
+.controls button{background:#ffffff20;color:white;border:1px solid #ffffff44;border-radius:999px;padding:8px 11px;font-size:11px;cursor:pointer}
 @media(prefers-reduced-motion:reduce){.scene,.bar,.visual{animation:none}.scene:first-of-type{opacity:1}}
 </style>
 </head>
 <body>
-<main class="stage"><section class="frame" aria-label="30 second animated story">
-<div class="topline"><span>ONLINE EARNINGS</span><span>30 SEC STORY • 16:9</span></div>
-<article class="scene"><div><div class="kicker">Scene 01 · The daily grind</div><div class="visual">🧑‍🔧</div><h1>He works <span class="gold">so hard.</span></h1><p>Long days. Tired hands. Every single day, he gives it everything.</p></div></article>
-<article class="scene"><div><div class="kicker">Scene 02 · The problem</div><div class="visual">💸</div><h1>But money is still <span class="gold">tight.</span></h1><p>He works more hours, but his time and energy have limits.</p></div></article>
-<article class="scene"><div><div class="kicker">Scene 03 · A new idea</div><div class="visual">💻✨</div><h1>Then he discovers the <span class="cyan">online world.</span></h1><p>He sees people building useful skills and finding clients on the internet.</p></div></article>
-<article class="scene"><div><div class="kicker">Scene 04 · Learn first</div><div class="visual">🧠📱</div><h1>He starts learning <span class="cyan">digital skills.</span></h1><p><span class="chip">Design</span><span class="chip">Video editing</span><span class="chip">Writing</span><span class="chip">Coding</span></p></div></article>
-<article class="scene"><div><div class="kicker">Scene 05 · Take action</div><div class="visual">🚀</div><h1>Practice. Build. <span class="gold">Show your work.</span></h1><p>He creates sample projects, improves his portfolio, and looks for real opportunities.</p></div></article>
-<article class="scene"><div><div class="kicker">Scene 06 · The lesson</div><div class="visual">🌟💳</div><h1>Don't just work hard.<br><span class="gold">Learn to work smart.</span></h1><p>Online income takes skill, patience, and effort. Start learning today.</p><div style="margin-top:22px"><span class="chip">FOLLOW FOR PRACTICAL ONLINE SKILLS</span></div></div></article>
+<main class="stage"><section class="reel" aria-label="30-second vertical Instagram reel">
+<div class="topline"><span class="brand">ONLINE EARNINGS</span><span>30 SEC • 9:16</span></div>
+<article class="scene"><div><div class="kicker">Scene 01 · The question</div><div class="visual">📱💸</div><h1>Want to earn <span class="gold">online?</span></h1><p>Your phone can be more than just scrolling and watching videos.</p></div></article>
+<article class="scene"><div><div class="kicker">Scene 02 · The truth</div><div class="visual">🎯</div><h1>First, learn a <span class="gold">useful skill.</span></h1><p>Real online income starts with value—not magic shortcuts or guaranteed money.</p></div></article>
+<article class="scene"><div><div class="kicker">Scene 03 · Choose your skill</div><div class="visual">💻✨</div><h1>Pick one skill. <span class="cyan">Start small.</span></h1><p><span class="chip">Video editing</span><span class="chip">Graphic design</span><span class="chip">Writing</span><span class="chip">Web design</span></p></div></article>
+<article class="scene"><div><div class="kicker">Scene 04 · Build proof</div><div class="visual">🧠🛠️</div><h1>Practice and make <span class="cyan">sample work.</span></h1><p>Create 3 strong examples. Show people what you can actually do.</p></div></article>
+<article class="scene"><div><div class="kicker">Scene 05 · Find opportunities</div><div class="visual">🚀</div><h1>Build a portfolio. <span class="gold">Reach out.</span></h1><p>Look for genuine clients, communicate clearly, and keep improving.</p></div></article>
+<article class="scene"><div><div class="kicker">Scene 06 · Your first step</div><div class="visual">🌟</div><h1>Learn one skill. <span class="gold">Start today.</span></h1><p>Be patient. Stay consistent. Results take time and are never guaranteed.</p><p class="cta">FOLLOW FOR PRACTICAL ONLINE EARNING TIPS</p></div></article>
 <div class="progress"><div class="bar"></div></div>
-<div class="controls"><button onclick="location.reload()" aria-label="Replay animation">↻ Replay</button><button onclick="document.fullscreenElement?document.exitFullscreen():document.querySelector('.frame').requestFullscreen()">⛶ Fullscreen</button></div>
+<div class="controls"><button onclick="location.reload()" aria-label="Replay animation">↻ Replay</button><button onclick="document.fullscreenElement?document.exitFullscreen():document.querySelector('.reel').requestFullscreen()">⛶ Fullscreen</button></div>
 </section></main>
 </body></html>
