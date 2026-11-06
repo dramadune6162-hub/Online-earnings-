@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From Hard Work to Smart Earning</title>
+<style>
+:root{--ink:#10172a;--blue:#1769ff;--cyan:#43d9ff;--gold:#ffd34e;--paper:#f4f7ff}
+*{box-sizing:border-box}body{margin:0;background:#080f20;color:white;font-family:Inter,system-ui,Arial,sans-serif;overflow:hidden}
+.stage{min-height:100svh;display:grid;place-items:center;padding:22px;background:radial-gradient(circle at 75% 20%,#183d79 0,transparent 35%),linear-gradient(135deg,#081226,#111b35 65%,#07101f)}
+.frame{position:relative;width:min(1100px,96vw);aspect-ratio:16/9;overflow:hidden;border:1px solid #ffffff26;border-radius:24px;background:linear-gradient(120deg,#111c35,#182b50);box-shadow:0 28px 90px #0009}
+.topline{position:absolute;left:5%;right:5%;top:7%;display:flex;justify-content:space-between;align-items:center;color:#b8c9e8;font-size:clamp(10px,1.4vw,15px);letter-spacing:.16em;text-transform:uppercase}
+.progress{height:4px;background:#ffffff20;position:absolute;left:0;right:0;bottom:0}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--gold));animation:progress 30s linear forwards}
+.scene{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:10% 8%;opacity:0;animation:scene 30s linear infinite}
+.scene h1{font-size:clamp(28px,6vw,72px);line-height:1.02;margin:0 0 2%;font-weight:900;letter-spacing:-.045em;text-wrap:balance}
+.scene p{font-size:clamp(13px,2vw,23px);color:#c5d5f1;margin:0 auto;max-width:720px;line-height:1.5}
+.kicker{font-size:clamp(10px,1.4vw,16px);color:var(--cyan);letter-spacing:.22em;text-transform:uppercase;font-weight:800;margin-bottom:18px}
+.visual{font-size:clamp(58px,12vw,132px);margin:1.5% 0;filter:drop-shadow(0 12px 22px #0008);animation:float 3s ease-in-out infinite}
+.gold{color:var(--gold)}.cyan{color:var(--cyan)}.blue{color:#79aaff}
+.scene:nth-of-type(1){animation-delay:0s}.scene:nth-of-type(2){animation-delay:5s}.scene:nth-of-type(3){animation-delay:10s}.scene:nth-of-type(4){animation-delay:15s}.scene:nth-of-type(5){animation-delay:20s}.scene:nth-of-type(6){animation-delay:25s}
+.scene:nth-of-type(1){background:radial-gradient(ellipse at 50% 65%,#71432366,transparent 48%)}
+.scene:nth-of-type(2){background:radial-gradient(ellipse at 50% 65%,#4a283e88,transparent 50%)}
+.scene:nth-of-type(3){background:radial-gradient(ellipse at 50% 60%,#1769ff55,transparent 50%)}
+.scene:nth-of-type(4){background:radial-gradient(ellipse at 50% 60%,#00b9c955,transparent 50%)}
+.scene:nth-of-type(5){background:radial-gradient(ellipse at 50% 60%,#1d9a6655,transparent 50%)}
+.scene:nth-of-type(6){background:radial-gradient(ellipse at 50% 60%,#e6a92855,transparent 50%)}
+.chip{display:inline-block;border:1px solid #ffffff35;background:#ffffff12;border-radius:999px;padding:9px 16px;margin:8px;font-size:clamp(10px,1.3vw,15px);color:#eaf2ff}
+.scene .visual{animation:float 3s ease-in-out infinite,zoom 5s ease-in-out infinite}
+@keyframes scene{0%,1%{opacity:0;transform:translateY(24px)}3%,14%{opacity:1;transform:translateY(0)}17%,100%{opacity:0;transform:translateY(-20px)}}
+@keyframes progress{to{width:100%}}@keyframes float{50%{transform:translateY(-12px)}}@keyframes zoom{50%{scale:1.08}}
+.controls{position:absolute;right:18px;bottom:18px;z-index:5;display:flex;gap:8px}.controls button{background:#ffffff18;color:white;border:1px solid #ffffff44;border-radius:999px;padding:9px 13px;cursor:pointer}
+@media(prefers-reduced-motion:reduce){.scene,.bar,.visual{animation:none}.scene:first-of-type{opacity:1}}
+</style>
+</head>
+<body>
+<main class="stage"><section class="frame" aria-label="30 second animated story">
+<div class="topline"><span>ONLINE EARNINGS</span><span>30 SEC STORY • 16:9</span></div>
+<article class="scene"><div><div class="kicker">Scene 01 · The daily grind</div><div class="visual">🧑‍🔧</div><h1>He works <span class="gold">so hard.</span></h1><p>Long days. Tired hands. Every single day, he gives it everything.</p></div></article>
+<article class="scene"><div><div class="kicker">Scene 02 · The problem</div><div class="visual">💸</div><h1>But money is still <span class="gold">tight.</span></h1><p>He works more hours, but his time and energy have limits.</p></div></article>
+<article class="scene"><div><div class="kicker">Scene 03 · A new idea</div><div class="visual">💻✨</div><h1>Then he discovers the <span class="cyan">online world.</span></h1><p>He sees people building useful skills and finding clients on the internet.</p></div></article>
+<article class="scene"><div><div class="kicker">Scene 04 · Learn first</div><div class="visual">🧠📱</div><h1>He starts learning <span class="cyan">digital skills.</span></h1><p><span class="chip">Design</span><span class="chip">Video editing</span><span class="chip">Writing</span><span class="chip">Coding</span></p></div></article>
+<article class="scene"><div><div class="kicker">Scene 05 · Take action</div><div class="visual">🚀</div><h1>Practice. Build. <span class="gold">Show your work.</span></h1><p>He creates sample projects, improves his portfolio, and looks for real opportunities.</p></div></article>
+<article class="scene"><div><div class="kicker">Scene 06 · The lesson</div><div class="visual">🌟💳</div><h1>Don't just work hard.<br><span class="gold">Learn to work smart.</span></h1><p>Online income takes skill, patience, and effort. Start learning today.</p><div style="margin-top:22px"><span class="chip">FOLLOW FOR PRACTICAL ONLINE SKILLS</span></div></div></article>
+<div class="progress"><div class="bar"></div></div>
+<div class="controls"><button onclick="location.reload()" aria-label="Replay animation">↻ Replay</button><button onclick="document.fullscreenElement?document.exitFullscreen():document.querySelector('.frame').requestFullscreen()">⛶ Fullscreen</button></div>
+</section></main>
+</body></html>
